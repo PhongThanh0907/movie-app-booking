@@ -1,0 +1,24 @@
+.button_banner {
+  margin-bottom: 280px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  .icon_button {
+    width: 4.5rem;
+    height: 4.5rem;
+    border: 3px solid #efeded;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #efeded;
+    padding-top: 0.2rem;
+    padding-left: 0.1rem;
+    font-size: 1rem;
+    opacity: 0;
+  }
+  &:hover {
+    background-color: transparent;
+    border: 1px solid transparent;
+  }
+  &:hover .icon_button {
+    opacity: 1;
+  }
+}

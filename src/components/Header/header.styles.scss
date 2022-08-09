@@ -1,0 +1,83 @@
+.header {
+  position: fixed;
+  top: 0;
+  background-color: #0000004a;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 10;
+  padding: 10px 20px;
+  .header__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .header__logo {
+      width: 20%;
+      img {
+        width: 20%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+    .header__nav {
+      margin: auto 0;
+      a {
+        text-decoration: none;
+        padding: 0 10px;
+        font-size: 20px;
+        color: #efeded;
+        font-weight: 700;
+        transition: 0.5s;
+        &:hover {
+          color: #ff1744;
+        }
+        &:hover:after {
+          width: 40%;
+        }
+      }
+    }
+    .header__auth {
+      width: 20%;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      .btn-auth {
+        background-color: transparent;
+        color: #efeded;
+        padding: 10px 30px;
+        font-size: 15px;
+        font-weight: 7 00;
+        border-radius: 30px;
+        border: 3px solid #efeded;
+        transition: all 0.3s;
+        &:hover {
+          cursor: pointer;
+          color: #ef4444;
+          border: 3px solid #ef4444;
+        }
+      }
+    }
+    .header__user {
+      .user__display {
+        transition: all 0.2s;
+        cursor: pointer;
+        a {
+          color: #000000;
+        }
+        &:hover a {
+          color: #ef4444;
+        }
+      }
+      .logout {
+        background-color: #000000;
+        padding: 10px;
+        border-radius: 5px;
+        color: #ffffff;
+        transition: all 0.3s;
+        &:hover {
+          background-color: #2c2c2c;
+        }
+      }
+    }
+  }
+}

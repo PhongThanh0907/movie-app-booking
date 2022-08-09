@@ -1,0 +1,41 @@
+.rap__showing{
+    background-image: url("../../../../public/img/maxresdefault.jpg");
+}
+.nav-item{
+    padding: 5px 0;
+    a{
+        text-align: center;
+        img{
+            width: 80px;
+        }
+    }
+    &:hover a {
+        color: #ef4444;
+        cursor: pointer;
+        
+    }
+}
+.nav-item::after{               
+    content: "";
+    display: block;
+    width: 0%;
+    height: 5px;
+    background-color: #ef4444;
+    transition: 0.5s;
+}
+.nav-item:hover::after{          
+    width: 100%;
+}
+.tab-content{
+    height: 636px;
+    padding: 20px;
+    overflow: scroll;
+}
+.rapshowing__area{
+    h4{
+        color: #ef4444;
+    }
+    p{
+        color: #efeded;
+    }
+}
